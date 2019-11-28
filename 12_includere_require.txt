@@ -1,0 +1,17 @@
+<?php
+
+  include (12_externalcontent);  
+  require (12_externalcontent);  // if the file do not exist it will not execute the rest of the code
+  
+  echo 'end of php';
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHP basics</title>
+</head>
+<body>
+  <p><?php include 12_externalcontent ?><p>
+</body>
+</html>
