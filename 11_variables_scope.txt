@@ -1,0 +1,46 @@
+<?php
+
+  $price = 55;
+  function sayPrice(){
+    $price = 15;
+    echo 'Price inside the function: $price' . '<br/>';
+  }
+  echo 'Price outside the function: $price' . '<br/>';
+	
+
+  // global variables
+  $name = 'mario';
+  function sayHello() {
+    global $name; // we can modify globally $name here
+    echo "hello $name";
+  }
+
+  function sayBye($name) { // name is declared locally
+    $name = "wario";
+    echo "bye $name";
+  }
+  sayBye($name);
+  echo $name; // this is not modified by the function just locally
+
+  function sayBye(&$name) { 
+    $name = "wario";
+    echo "bye $name";
+  }
+  sayBye($name);
+  echo $name; // 
+  
+  
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHP basics</title>
+</head>
+<body>
+
+</body>
+</html>
+
+ 
