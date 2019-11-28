@@ -1,0 +1,31 @@
+<?php
+
+  function sayHello($name = 'antonio', $time) {
+    echo "good $time $name" . "<br/>";
+  }
+
+  function formatProduct($product) {
+      //echo "{$product['name']} cost {$product['price']} dollars to buy <br/>";
+      return "{$product['name']} cost {$product['price']} dollars to buy <br/>";
+    
+  }
+
+  //sayHello();
+  //sayHello('sebastian');
+  sayHello('Jules', 'afternoon');
+
+  $formattedValue = formatProduct(['name' => 'gold start', 'price' => 20]);
+  echo $formattedValue;
+
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHP basics</title>
+</head>
+<body>
+
+</body>
+</html>
