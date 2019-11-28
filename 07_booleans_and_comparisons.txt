@@ -1,0 +1,23 @@
+// comparisons booleans
+echo true; // print "1"
+echo false; // print ""
+
+// numbers
+echo 5 < 10; // true
+echo 5 > 10; // false
+echo 5 == 10; // false
+echo 10 == 10; // true
+echo 5 != 10; // false
+echo 5 <= 5; // true
+echo 5 >= 5; // true
+
+// strings
+echo 'julian' < 'shawn'; // true
+echo 'julian' > 'shawn'; // false
+echo 'julian' > 'Julian'; // true
+echo 'julian' == 'julian'; // false
+
+// loose vs strict equal comparison
+echo 5 == '5'; // false
+echo 5 === '5'; // true
+echo 5 === 5; // true
